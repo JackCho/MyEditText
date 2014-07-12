@@ -1,0 +1,25 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <com.jit.lib.MyEditText
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/et"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        app:bg_color="@android:color/darker_gray"
+        android:layout_marginTop="10dp"
+        app:text_color="#ff0000"
+        app:text_hint="来自布局的hint"
+        app:text_size="8sp" />
+
+    <TextView
+        android:id="@+id/et_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/et"
+        android:layout_marginTop="10dp"
+        android:text="MyEditText的内容是：" />
+
+</RelativeLayout>
